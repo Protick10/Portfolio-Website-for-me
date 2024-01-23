@@ -20,7 +20,12 @@ nav{
     /* align-items: center; */
     width: 80vw;
     margin:10px auto;
+    /* background-color: rgba(199, 195, 195, 0.1); */
+    /* border-radius: 50px; */
+    /* background-color: rgba(rgb(245, 245, 245), 0.5); */
     /* border: 2px solid red; */
+    z-index: 10;
+    position: relative;
 }
 
 .nav-links{
@@ -53,8 +58,15 @@ nav{
     transition: all 0.3s ease 0s;
 }
 
-.nav-links a:hover{
+.nav-links li a:hover{
     color: #da5a27;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    background-color: rgba(199, 195, 195, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .nav-links div img{
@@ -96,6 +108,7 @@ nav img{
     /* align-items: center; */
     /* border: 2px solid red; */
     height: 70vh;
+    /* padding: 0px 10px; */
     
 }
 
@@ -187,6 +200,8 @@ nav img{
     top: 30%;
 }
 
+
+
 .re3{
     position: absolute;
     right: 7%;
@@ -213,4 +228,31 @@ nav img{
     /* z-index: 10; */
     top: 0;
     right: 0;
+}
+.re7{
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width:1440px) {
+    .re2{
+        position: absolute;
+        right: 33%;
+        z-index: 10;
+        top: 30%;
+    }
+
+    .re1{
+        position: absolute;
+        right: 6%;
+        z-index: 10;
+        top: 87%;
+    }
+    
+    .re5{
+        position: absolute;
+        right: 32.5%;
+        z-index: 10;
+        top: 95%;
+    }
 }
